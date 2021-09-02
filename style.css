@@ -1,0 +1,29 @@
+:root {
+    box-sizing: border-box;
+    --mainbackground: rgb(4, 11, 20);
+    --pfont: rgb(255,255,255);
+    --mainfont: rgb(136,146,176);
+    --bigfont: rgb(255,11,86);
+    --secfont: rgb(204,214,246);
+    --border: rgb(100,255,218);
+  
+
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+  }
+
+  body {
+      background: var(--mainbackground);
+  }
+  h1 {
+      color: var(--bigfont)
+  }
