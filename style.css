@@ -27,13 +27,12 @@ html {
 }
 
 body {
-    min-height: 100vh;
-    padding-left: 13rem;
-    /* background-color: #1D1D1D; */
-    background-image: linear-gradient(45deg, #181818, #1D1D1D);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-  
+  min-height: 100vh;
+  padding-left: 13rem;
+  /* background-color: #1D1D1D; */
+  background-image: linear-gradient(45deg, #181818, #1d1d1d);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
 }
 .main-menu {
   width: 13rem;
@@ -69,14 +68,14 @@ body {
   align-items: center;
 }
 
-
 .logo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: var(--mainfont) solid 5px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0.31); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0.31);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: var(--mainfont) solid 5px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
 }
 
 .main-menu span {
@@ -105,7 +104,7 @@ body {
 .menuelement a {
   text-decoration: none;
   width: 100%;
-  color: var(--secfont) ;
+  color: var(--secfont);
 }
 
 .social {
@@ -116,44 +115,62 @@ body {
 
 /*Main elements*/
 .mainwrap {
- overflow-x: hidden;
- display: flex;
- 
+  overflow-x: hidden;
+  display: flex;
 }
 
 .card {
-    max-width: 80%;
-    margin: 2rem;
-    padding: 2.5rem;
-    line-height: 1.7rem;
-    word-wrap: break-word;
-    border-radius: 4px;
-    background: var(--mainfont);
-    display: flex;
-    flex-direction: column;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,.24));
-    overflow: hidden;
+  margin: 2rem;
+  height: auto;
+  max-width: 80%;
+  line-height: 1.7rem;
+  word-wrap: break-word;
+  border-radius: 8px;
+  background: var(--mainfont);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.topsite {
+  overflow: hidden;
+  background-image: url(./media/aboutme.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  min-height: 10rem;
+}
+
+.textcontener {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
 }
 
 .card h2 {
-    font-size: clamp(12px, calc(1rem + 0.7vw), 20px);
+  margin: 2rem 0;
+  font-size: clamp(12px, calc(1rem + 0.7vw), 20px);
 }
 .card p {
-    font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
+  margin: 1rem 0;
+  font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
+}
+.datum p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(9px, calc(0.4rem + 0.5vw), 20px);
 }
 
+
 @media screen and (max-width: 1024px) {
-    .main-menu {
-        display: none;
-        
-    }
-    body {
-        padding: 0;
-    }    
-    .mainwrap {
-        margin: 0%;
-    }
-    .card {
-        max-width: 100%;
-    }
+  .main-menu {
+    display: none;
+  }
+  body {
+    padding: 0;
+  }
+  .mainwrap {
+    margin: 0%;
+  }
+  .card {
+    max-width: 100%;
+  }
 }
