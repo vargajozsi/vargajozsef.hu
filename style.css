@@ -61,7 +61,6 @@ body {
   padding: 0;
 }
 
-
 .toplogo {
   width: 100%;
   display: flex;
@@ -124,7 +123,7 @@ body {
 .social img {
   width: 1.5rem;
   height: auto;
-  color: var(--border) ;
+  color: var(--border);
 }
 
 /*Main elements*/
@@ -137,7 +136,7 @@ body {
 .card {
   margin: 2rem;
   height: auto;
-  max-width: 80%;
+  max-width: 100%;
   line-height: 1.7rem;
   word-wrap: break-word;
   border-radius: 8px;
@@ -148,7 +147,7 @@ body {
   border-top: var(--mainfont) solid 1px;
   border-left: var(--mainfont) solid 1px;
   border-radius: 8px;
-  box-shadow: black 3px  3px;
+  box-shadow: black 3px 3px;
 }
 .topsite {
   overflow: hidden;
@@ -171,7 +170,7 @@ body {
   font-size: clamp(12px, calc(1.5rem + 0.7vw), 30px);
 }
 .card p {
-    margin: 0 0 3rem 0;
+  margin: 0 0 3rem 0;
   font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
 }
 
@@ -179,18 +178,26 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 2rem;
-
 }
 
-.workscontainer img{
+.workscontainer img {
   width: 100%;
   height: auto;
   display: block;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
   border-radius: 1rem;
-
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.workscontainer img:hover {
+  -webkit-box-shadow: 5px 5px 10px 5px #000000;
+  box-shadow: 5px 5px 10px 5px #000000;
+  
+  
 }
 
 .datum p {
