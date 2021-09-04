@@ -117,6 +117,7 @@ body {
 .mainwrap {
   overflow-x: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -139,6 +140,7 @@ body {
   width: auto;
   min-height: 10rem;
 }
+
 
 .textcontener {
   display: flex;
