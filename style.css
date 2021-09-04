@@ -174,12 +174,17 @@ body {
   font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
 }
 
+
 .workscontainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 2rem;
+}
+.workscontainer:first-child a {
+  text-decoration: none;
 }
 
 .workscontainer img {
@@ -196,8 +201,28 @@ body {
 .workscontainer img:hover {
   -webkit-box-shadow: 5px 5px 10px 5px #000000;
   box-shadow: 5px 5px 10px 5px #000000;
-  
-  
+}
+.contactformul {
+  text-align: center;
+}
+
+.contactformul li {
+  list-style: none;
+  margin: 6px 0;
+}
+
+#fname, #email{
+  width: 40%;
+  margin: 0;
+  padding: 0 7px;
+}
+#subject, #message  {
+  width: 80%;
+  padding: 0 7px;
+
+}
+#message {
+  height: 10rem;
 }
 
 .datum p {
@@ -221,4 +246,6 @@ body {
   .card {
     max-width: 100%;
   }
+.workscontainer {
+  flex-wrap: wrap;
 }
