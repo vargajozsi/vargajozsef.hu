@@ -138,13 +138,14 @@ body {
 }
 .topsite {
   overflow: hidden;
-  background-image: url(./media/aboutme.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: auto;
-  min-height: 10rem;
+  max-height: 10rem;
 }
-
+.topsite > img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
 .textcontener {
   display: flex;
   flex-direction: column;
