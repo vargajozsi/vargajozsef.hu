@@ -131,6 +131,10 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border-top: var(--mainfont) solid 1px;
+  border-left: var(--mainfont) solid 1px;
+  border-radius: 8px;
+  box-shadow: black 3px  3px;
 }
 .topsite {
   overflow: hidden;
@@ -140,7 +144,6 @@ body {
   width: auto;
   min-height: 10rem;
 }
-
 
 .textcontener {
   display: flex;
@@ -161,8 +164,8 @@ body {
   font-size: clamp(9px, calc(0.2rem + 0.5vw), 20px);
   margin: 0;
   padding: 0;
+  color: rgb(153, 153, 153);
 }
-
 
 @media screen and (max-width: 1024px) {
   .main-menu {
