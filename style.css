@@ -60,6 +60,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
 .toplogo {
   width: 100%;
   display: flex;
@@ -78,6 +80,10 @@ body {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
 }
 
+.logo img:hover {
+  width: 400px;
+  height: 400px;
+}
 .main-menu span {
   color: var(--pfont);
   padding: 1rem;
@@ -101,6 +107,9 @@ body {
   border-top: 1px solid rgb(114, 114, 114);
   line-height: 3rem;
 }
+.menuelement:hover a {
+  color: var(--border);
+}
 .menuelement a {
   text-decoration: none;
   width: 100%;
@@ -111,6 +120,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.social img {
+  width: 1.5rem;
+  height: auto;
+  color: var(--border) ;
 }
 
 /*Main elements*/
