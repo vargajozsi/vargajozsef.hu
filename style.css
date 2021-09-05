@@ -307,3 +307,7 @@ button {
 .workscontainer {
   flex-wrap: wrap;
 }
+.iconcontainer {
+  width: 100%;
+}
+}
