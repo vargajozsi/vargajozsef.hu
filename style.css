@@ -31,7 +31,6 @@ html {
 body {
   min-height: 100vh;
   padding-left: 13rem;
-  /* background-color: #1D1D1D; */
   background-image: linear-gradient(45deg, #181818, #1d1d1d);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
@@ -292,14 +291,19 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
+
   .main-menu {
-    display: none;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
   body {
     padding: 0;
   }
   .mainwrap {
-    margin: 0%;
+    margin: 0;
   }
   .card {
     max-width: 100%;
@@ -310,4 +314,6 @@ button {
 .iconcontainer {
   width: 100%;
 }
+
+
 }
