@@ -35,6 +35,36 @@ body {
   background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
+.hamblabel {
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 2rem;
+  height: 0.25rem;
+  z-index: 5;
+  cursor: pointer;
+  
+}
+.hamblabel::before, .hamblabel::after {
+  display: block;
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  width: 2rem;
+  height: 0.25rem;
+  
+}
+.hamblabel::after {
+  top: 0.5rem;
+
+}
+.hamblabel::before{
+  top: -0.5rem;
+}
+
+
 .main-menu {
   width: 13rem;
   background-color: #181818;
@@ -47,7 +77,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 3;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -291,7 +320,12 @@ button {
 }
 
 @media screen and (max-width: 1024px) {
-
+  .hamblabel {
+    display: block;
+  }
+  input[type='checkbox']:checked + .main-menu {
+    display: none;
+   }
   .main-menu {
     width: 100%;
     position: relative;
