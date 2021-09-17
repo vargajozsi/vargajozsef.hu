@@ -159,7 +159,7 @@ body {
 
 /*Main elements*/
 .mainwrap {
-  padding-top: 5rem;
+  padding-top: 0rem;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -325,10 +325,9 @@ button {
   .hamblabel {
     display: block;
   }
-  input[type='checkbox']:checked + .main-menu {
-    display: none;
-   }
+
   .main-menu {
+    display: none;
     height: fit-content;
     width: 100%;
     position: fixed;
@@ -336,10 +335,14 @@ button {
     margin: 0;
     padding: 0;
   }
+  input[type='checkbox']:checked + .main-menu {
+    display: block;
+   }
   body {
     padding: 0;
   }
   .mainwrap {
+    padding-top: 3rem; 
     margin: 0;
   }
   .card {
