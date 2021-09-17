@@ -108,13 +108,13 @@ body {
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
-  transition: width 2s, height 2s;
+  transition: width 1s, height 1s;
 
 }
 
 .logo img:hover {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
 }
 .main-menu span {
   color: var(--pfont);
