@@ -183,6 +183,7 @@ body {
   border-radius: 8px;
   box-shadow: black 3px 3px;
 }
+
 .topsite {
   overflow: hidden;
   width: auto;
@@ -228,6 +229,12 @@ body {
   justify-content: center;
   align-content: center;
 }
+.iconcontainer:hover {
+  transition: transform 0.1s ease-in-out;
+  transform: scale(99%);
+
+}
+
 .iconcontainer p {
   background-color: var(--csrdheader);
   padding: 1rem;
