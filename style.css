@@ -218,12 +218,23 @@ body {
 .slide-container {
   display: flex;
   overflow-x: auto;
-
 }
 
+/* width */
 .slide-container::-webkit-scrollbar {
-  display: none;
+  height: 0.5rem;
 }
+
+/* Track */
+.slide-container::-webkit-scrollbar-track {
+  background: #bbdac0; 
+}
+ 
+/* Handle */
+.slide-container::-webkit-scrollbar-thumb {
+  background: var(--csrdheader); 
+}
+
 
 .iconcontainer {
   border: #7ddf8d solid 2px;
