@@ -25,11 +25,10 @@ html {
   --bigfont: #ff0b56;
   --secfont: #ccd6f6;
   --border: #64ffda;
-  --csrdheader: #7DDF8D;
+  --csrdheader: #7ddf8d;
 }
 
 body {
-  
   min-height: 100vh;
   padding-left: 13rem;
   background-image: linear-gradient(45deg, #181818, #1d1d1d);
@@ -46,25 +45,22 @@ body {
   height: 0.25rem;
   z-index: 5;
   cursor: pointer;
-  
 }
-.hamblabel::before, .hamblabel::after {
+.hamblabel::before,
+.hamblabel::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--csrdheader);
   width: 2rem;
   height: 0.25rem;
-  
 }
 .hamblabel::after {
   top: 0.5rem;
-
 }
-.hamblabel::before{
+.hamblabel::before {
   top: -0.5rem;
 }
-
 
 .main-menu {
   width: 13rem;
@@ -109,7 +105,6 @@ body {
     5px 5px 15px 5px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
   transition: width 1s, height 1s;
-
 }
 
 .logo img:hover {
@@ -209,7 +204,7 @@ body {
   font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
 }
 
-#MySkills{
+#MySkills {
   color: var(--menubackground);
 }
 
@@ -219,20 +214,26 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
+}
+.slide-container {
+  display: flex;
+  overflow-x: auto;
 
 }
+
+.slide-container::-webkit-scrollbar {
+  display: none;
+}
+
 .iconcontainer {
-  border: #7DDF8D solid 2px;
+  border: #7ddf8d solid 2px;
   min-width: 10rem;
   margin: 2rem;
   text-align: center;
-  justify-content: center;
-  align-content: center;
 }
 .iconcontainer:hover {
   transition: transform 0.1s ease-in-out;
   transform: scale(99%);
-
 }
 
 .iconcontainer p {
@@ -243,7 +244,10 @@ body {
   margin: 2rem 0;
 }
 
-#Inkscape img, #gimp img, #joomla img, #AdobePhotoshop img{
+#Inkscape img,
+#gimp img,
+#joomla img,
+#AdobePhotoshop img {
   width: auto;
   max-height: 48px;
 }
@@ -279,12 +283,13 @@ body {
   text-align: center;
 }
 
-input, textarea {
+input,
+textarea {
   line-height: 1.7rem;
   overflow: auto;
   resize: none;
   outline: none;
-  border: 2px solid var(--csrdheader) ;
+  border: 2px solid var(--csrdheader);
   border-radius: 4px;
 }
 
@@ -293,7 +298,8 @@ input, textarea {
   margin: 6px 0;
 }
 
-#fname, #email{
+#fname,
+#email {
   width: 40%;
   margin: 0;
   padding: 0 7px;
@@ -301,19 +307,15 @@ input, textarea {
 #subject {
   width: 80%;
   padding: 0 7px;
-
 }
-#message  {
+#message {
   min-width: 80%;
   max-width: 80%;
   padding: 0 7px;
-
 }
 #message {
   height: 10rem;
 }
-
-
 
 button {
   background-color: var(--csrdheader);
@@ -345,30 +347,26 @@ button {
     transition: transform 0.5s ease-in-out;
     transform: scale(0%);
     transform-origin: top right;
-
-
   }
-  input[type='checkbox']:checked + .main-menu {
+  input[type="checkbox"]:checked + .main-menu {
     transition: transform 0.5s ease-in-out;
     transform: scale(100%);
     transform-origin: top right;
-   }
+  }
   body {
     padding: 0;
   }
   .mainwrap {
-    padding-top: 3rem; 
+    padding-top: 3rem;
     margin: 0;
   }
   .card {
     max-width: 100%;
   }
-.workscontainer {
-  flex-wrap: wrap;
-}
-.iconcontainer {
-  width: 100%;
-}
-
-
+  .workscontainer {
+    flex-wrap: wrap;
+  }
+  .iconcontainer {
+    width: 100%;
+  }
 }
