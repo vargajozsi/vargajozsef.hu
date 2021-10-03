@@ -35,11 +35,10 @@
       </div>
       <div id="menu-nav">
         <ul>
-          <li class="menuelement"><a href="#AboutMe">About</a></li>
-          <li class="menuelement"><a href="#MySkills">My Skills</a></li>
-          <li class="menuelement"><a href="#Work">Work</a></li>
-          <!-- <li class="menuelement"><a href="#about">Blog</a></li> -->
-          <li class="menuelement"><a href="#Contact">Contact</a></li>
+          <li class="menuelement"><a href="#AboutMe" id="about">About</a></li>
+          <li class="menuelement"><a href="#MySkills" id="myskills">My Skills</a></li>
+          <li class="menuelement"><a href="#Work" id="work">Work</a></li>
+          <li class="menuelement"><a href="#Contact" id="contact">Contact</a></li>
           <li class="menuelement social">
             <div>
               <a href="#about"
@@ -70,15 +69,16 @@
       <div class="wrapper-langue">
         <img src="./media/unionjack.png" id="english" alt="unionjack">
         <img src="./media/hungaryFlag.png" id="magyar" alt="hungarian flag">
+        <img src="./media/austrianFlag.png" id="oesterreich" alt="Austria flag">
       </div>
       <div class="card" id="AboutMe">
         <div class="topsite" id="AboutMe">
           <img src="./media/aboutme.webp" alt="aboutme" />
         </div>
         <div class="textcontener">
-          <h2 >About me</h2>
+          <h2 id="debut">About me</h2>
 
-          <p>
+          <p id="textAbout">
             Hy, my name is Josef. I am on the way to be a Front End developer. I
             located in EU. I develop websites with a focus on user interfaces
             and data visualisations. I do take on full website projects, Joomla
@@ -95,7 +95,7 @@
           <img src="./media/skills.webp" alt="skills_photo" />
         </div>
         <div class="textcontener">
-          <h2>My Skills</h2>
+          <h2 id="skillsTitle">My Skills</h2>
           <div id="skillcontainer">
 
         <div class="slide-container">
@@ -159,7 +159,7 @@
           <img src="./media/work.webp" alt="work_photo" />
         </div>
         <div class="textcontener">
-          <h2>Work</h2>
+          <h2 id="workTitle">Work</h2>
 
           <div class="workscontainer">
             <div>
@@ -190,9 +190,9 @@
           <img src="./media/contact.webp" alt="contact_photo" />
         </div>
         <div class="textcontener">
-          <h2>Contact</h2>
+          <h2 id="contactTitle">Contact</h2>
 
-          <p>
+          <p id="contactText">
             If you have any request or question do not hesitate to use the form.
           </p>
           <ul class="contactformul">
@@ -230,7 +230,7 @@
               ></textarea>
             </li>
             <li id="buttonform">
-              <button disabled="disabled">Submit</button>
+              <button disabled="disabled" id="contactButton">Submit</button>
             </li>
           </ul>
 
