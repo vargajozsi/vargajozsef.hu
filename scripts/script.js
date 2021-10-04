@@ -1,5 +1,6 @@
 let hungarianLangue = document.getElementById("magyar");
 let englishLangue = document.getElementById("english");
+let germanLangue = document.getElementById("german");
 
 function translateToHungarian() {
   //menu translate:
@@ -23,10 +24,35 @@ function translateToHungarian() {
   document.getElementById('contactButton').innerText = "Elküld";
 }
 
+function translateToGerman() {
+  //menu translate:
+  document.getElementById("about").innerText = "Über mich";
+  document.getElementById("myskills").innerText = "Kompetenzen";
+  document.getElementById("work").innerText = "Leistungen";
+  document.getElementById("contact").innerText = "Kontakt";
+  //main elements translate:
+  document.getElementById('debut').innerText = "Über mich"
+  document.getElementById('textAbout').innerText = "Üdv! József vagyok. Ha minden jól megy, hamarosan Frontend fejlesztő leszek. Az EU-ban tevékenykedem. Webes felületeket fejlesztek a felhasználói interfészekre és az adat vizualizációra specializálódva. Teljes web-projekteket is vállalok, Joomla és Wordpress motorokkal, valamint webshopokat. Problémamegoldó típusú ember vagyok kitüntetett figyelemet szentelek a részletekre. A teljes Frontend spektrummal foglalkozom. Siklóernyőzöm és három gyermekem van.";
+  document.getElementById('skillsTitle').innerText = "Kompetenzen";
+  document.getElementById('workTitle').innerText = "Leistungen";
+  document.getElementById('contactTitle').innerText = "Kontakt";
+  document.getElementById('contactText').innerText = "Zögern Sie bitte nicht, uns zu kontaktieren, falls Sie irgendwelche Informationen benötigen.";
+  //html langue change:
+  document.documentElement.setAttribute('lang', 'hu');
+  //form translate:
+  document.getElementById('fname').setAttribute('placeholder', 'Név');
+  document.getElementById('subject').setAttribute('placeholder', 'Tárgy');
+  document.getElementById('message').setAttribute('placeholder', 'Üzenet');
+  document.getElementById('contactButton').innerText = "Elküld";
+}
+
 hungarianLangue.addEventListener("click", () => {
   translateToHungarian();
 });
 englishLangue.addEventListener("click", () => {
   //page reload:
   window.location.reload(true);
+});
+germanLangue.addEventListener("click", () => {
+  translateToGerman();
 });
