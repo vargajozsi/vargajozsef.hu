@@ -1,9 +1,15 @@
+let tabout = document.getElementById("about");
+let tmyskills = document.getElementById("myskills");
+let tworks = document.getElementById("work");
+let tcontact = document.getElementById("contact");
+
 function translateToHungarian() {
   //menu translate:
-  document.getElementById("about").innerText = "Rólam";
-  document.getElementById("myskills").innerText = "Képességek";
-  document.getElementById("work").innerText = "Munkák";
-  document.getElementById("contact").innerText = "Kapcsolat";
+
+  tabout.innerText = "Rólam";
+  tmyskills.innerText = "Képességek";
+  tworks.innerText = "Munkák";
+  tcontact.innerText = "Kapcsolat";
   //main elements translate:
   document.getElementById("debut").innerText = "Rólam";
   document.getElementById("textAbout").innerText =
@@ -24,10 +30,10 @@ function translateToHungarian() {
 
 function translateToGerman() {
   //menu translate:
-  document.getElementById("about").innerText = "Über mich";
-  document.getElementById("myskills").innerText = "Kompetenzen";
-  document.getElementById("work").innerText = "Leistungen";
-  document.getElementById("contact").innerText = "Kontakt";
+  tabout.innerText = "Über mich";
+  tmyskills.innerText = "Kompetenzen";
+  tworks.innerText = "Leistungen";
+  tcontact.innerText = "Kontakt";
   //main elements translate:
   document.getElementById("debut").innerText = "Über mich";
   document.getElementById("textAbout").innerText =

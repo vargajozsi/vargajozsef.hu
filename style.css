@@ -224,6 +224,8 @@ body {
 }
 
 #skillcontainer {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -233,11 +235,15 @@ body {
 }
 
 .iconcontainer {
+  position: absolute;
   border: #7ddf8d solid 2px;
   min-width: 10rem;
   margin: 2rem;
   text-align: center;
+  display: block;
+  opacity: 0;
 }
+
 .iconcontainer:hover {
   transition: transform 0.1s ease-in-out;
   transform: scale(99%);
@@ -257,6 +263,38 @@ body {
 #AdobePhotoshop img {
   width: auto;
   max-height: 48px;
+}
+
+.showIt {
+  animation: skillanimated 3s;
+}
+
+@keyframes skillanimated {
+  0% {
+    opacity: 0.01;
+    top: -100%;
+    background: red;
+  }
+  25% {
+    opacity: 0.5;
+    top: -25%;
+    background: blue;
+  }
+  50% {
+    opacity: 1;
+    top: 0;
+    background: yellow;
+  }
+  75% {
+    opacity: 0.5;
+    top: 50%;
+    background: green;
+  }
+  100% {
+    opacity: 0.01;
+    top: 100%;
+    background: red;
+  }
 }
 
 .workscontainer {
