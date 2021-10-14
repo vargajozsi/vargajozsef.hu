@@ -40,10 +40,10 @@ function translateToGerman() {
   //html langue change:
   document.documentElement.setAttribute('lang', 'hu');
   //form translate:
-  document.getElementById('fname').setAttribute('placeholder', 'Név');
-  document.getElementById('subject').setAttribute('placeholder', 'Tárgy');
-  document.getElementById('message').setAttribute('placeholder', 'Üzenet');
-  document.getElementById('contactButton').innerText = "Elküld";
+  document.getElementById('fname').setAttribute('placeholder', 'Name');
+  document.getElementById('subject').setAttribute('placeholder', 'Betreff');
+  document.getElementById('message').setAttribute('placeholder', 'Nachricht');
+  document.getElementById('contactButton').innerText = "senden";
 }
 
 hungarianLangue.addEventListener("click", () => {
@@ -56,3 +56,4 @@ englishLangue.addEventListener("click", () => {
 germanLangue.addEventListener("click", () => {
   translateToGerman();
 });
+
