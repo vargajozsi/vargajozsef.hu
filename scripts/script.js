@@ -18,7 +18,9 @@ germanLangue.addEventListener("click", () => {
 let svhtml = document.getElementById("vhtml");
 let svcss = document.getElementById("vcss");
 let svjavascript = document.getElementById("vjavaScript");
-let showarray = [svhtml, svcss, svjavascript],
+let svgithub = document.getElementById("vgithub");
+
+let showarray = [svhtml, svcss, svjavascript, svgithub],
   x = -1;
 
 function displayNextImage() {
