@@ -44,11 +44,14 @@ let x = -1;
 
 function displayNextItem() {
   x = x === showarray.length - 1 ? 0 : x + 1;
-  showarray[x].classList.toggle("showIt");
+  showarray[x].classList.add("showIt");
+  if (x === 0) {
+    showarray[showarray.length - 1].classList.remove("showIt");
+  } else showarray[x - 1].classList.remove("showIt");
 }
 
 function startTimer() {
-  setInterval(displayNextItem, 2000);
+  setInterval(displayNextItem, 5000);
 }
 
 startTimer();
