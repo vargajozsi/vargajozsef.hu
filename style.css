@@ -273,7 +273,7 @@ body {
   from {
     opacity: 0.9;
     top: -100%;
-    background: whitesmoke;
+    background: #a8ffb7;
   }
   to {
     opacity: 1;
