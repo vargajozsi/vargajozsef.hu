@@ -45,9 +45,9 @@ let x = -1;
 function displayNextItem() {
   x = x === showarray.length - 1 ? 0 : x + 1;
   showarray[x].classList.add("showIt");
-  if (x === 0) {
-    showarray[showarray.length - 1].classList.remove("showIt");
-  } else showarray[x - 1].classList.remove("showIt");
+  x === 0
+    ? showarray[showarray.length - 1].classList.remove("showIt")
+    : showarray[x - 1].classList.remove("showIt");
 }
 
 function startTimer() {
