@@ -237,7 +237,7 @@ body {
 .iconcontainer {
   position: absolute;
   border: #7ddf8d solid 2px;
-  min-width: 10rem;
+  width: 50%;
   margin: 2rem;
   text-align: center;
   display: block;
@@ -257,33 +257,45 @@ body {
   margin: 2rem 0;
 }
 
-#Inkscape img,
-#gimp img,
-#joomla img,
-#AdobePhotoshop img {
+#vinkscape img,
+#vgimp img,
+#vjoomla img,
+#vAdobePhotoshop img {
   width: auto;
-  max-height: 48px;
+  height: 3rem;
 }
 
 .showIt {
-  animation: skillanimated 3s;
+  animation: skillanimated 5s ease-in;
 }
 
 @keyframes skillanimated {
+  from {
+    opacity: 0.9;
+    top: -100%;
+    background: whitesmoke;
+  }
+  to {
+    opacity: 1;
+    top: 100%;
+    background: #7ddf8d;
+  }
+}
+/* @keyframes skillanimated {
   0% {
     opacity: 0.01;
     top: -100%;
-    background: red;
+    background: white;
   }
   25% {
     opacity: 0.5;
     top: -25%;
-    background: blue;
+    background: gray;
   }
   50% {
     opacity: 1;
     top: 0;
-    background: yellow;
+    background: green;
   }
   75% {
     opacity: 0.5;
@@ -293,9 +305,9 @@ body {
   100% {
     opacity: 0.01;
     top: 100%;
-    background: red;
+    background: gray;
   }
-}
+} */
 
 .workscontainer {
   display: flex;

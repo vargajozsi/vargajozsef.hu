@@ -19,17 +19,36 @@ let svhtml = document.getElementById("vhtml");
 let svcss = document.getElementById("vcss");
 let svjavascript = document.getElementById("vjavaScript");
 let svgithub = document.getElementById("vgithub");
+let svbash = document.getElementById("vbash");
+let svregex = document.getElementById("vregex");
+let svjoomla = document.getElementById("vjoomla");
+let svwordpress = document.getElementById("vwordpress");
+let svAdobePhotoshop = document.getElementById("vAdobePhotoshop");
+let svinkscape = document.getElementById("vinkscape");
+let svgimp = document.getElementById("vgimp");
 
-let showarray = [svhtml, svcss, svjavascript, svgithub],
-  x = -1;
+let showarray = [
+  svhtml,
+  svcss,
+  svjavascript,
+  svgithub,
+  svbash,
+  svregex,
+  svjoomla,
+  svwordpress,
+  svAdobePhotoshop,
+  svinkscape,
+  svgimp,
+];
+let x = -1;
 
-function displayNextImage() {
+function displayNextItem() {
   x = x === showarray.length - 1 ? 0 : x + 1;
   showarray[x].classList.toggle("showIt");
 }
 
 function startTimer() {
-  setInterval(displayNextImage, 1800);
+  setInterval(displayNextItem, 2000);
 }
 
-document.body.onload = startTimer();
+startTimer();
