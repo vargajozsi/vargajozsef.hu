@@ -53,5 +53,4 @@ function displayNextItem() {
 function startTimer() {
   setInterval(displayNextItem, 5000);
 }
-
 startTimer();
