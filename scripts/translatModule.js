@@ -51,4 +51,28 @@ function translateToGerman() {
   document.getElementById("message").setAttribute("placeholder", "Nachricht");
   document.getElementById("contactButton").innerText = "senden";
 }
-export { translateToHungarian, translateToGerman };
+export { translateToHungarian, translateToGerman, translateToEnglish };
+
+function translateToEnglish() {
+  //menu translate:
+
+  tabout.innerText = "About me";
+  tmyskills.innerText = "Skills";
+  tworks.innerText = "Works";
+  tcontact.innerText = "Contact";
+  //main elements translate:
+  document.getElementById("debut").innerText = "About me";
+  document.getElementById("textAbout").innerText = "Hy, my name is Josef. I am on the way to be a Front End developer. I located in EU.I develop websites with a focus on user interfaces and data visualisations.I do take on full website projects, Joomla and Wordpress projects, webstores.I am a problem solver employee with high attention to details.I am interested in the whole Frontend area.I am paraglider and I have tree children.";
+  document.getElementById("skillsTitle").innerText = "Skills";
+  document.getElementById("workTitle").innerText = "Works";
+  document.getElementById("contactTitle").innerText = "Contact";
+  document.getElementById("contactText").innerText =
+    "If you have any request or question do not hesitate to use the form.";
+  //html langue change:
+  document.documentElement.setAttribute("lang", "en");
+  //form translate:
+  document.getElementById("fname").setAttribute("placeholder", "Name");
+  document.getElementById("subject").setAttribute("placeholder", "Subject");
+  document.getElementById("message").setAttribute("placeholder", "Text");
+  document.getElementById("contactButton").innerText = "Submit";
+}

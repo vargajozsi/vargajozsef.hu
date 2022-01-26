@@ -1,250 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;700&family=Merriweather+Sans:ital,wght@0,300;1,300;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Varga Jozsef portfolio - Frontend Programmer</title>
-    <meta
-      name="description"
-      content="Hi, I'm Jozsef Varga, a Frontend Engineer living in Hungary. I have experience in javaScript, Css, Html, Wordpress, Joomla, GitHub, Regex, Gimp, Adobe Photoshop, Inkscape."
-      data-react-helmet="true"
-    />
-  </head>
 
-  <body>
-    <label for="hambmenu" class="hamblabel"></label>
-    <input type="checkbox" name="hambmenu" id="hambmenu" hidden />
-    <div class="main-menu">
-      <div class="toplogo">
-        <div class="logo">
-          <img src="./media/facevj.webp" alt="developerfoto" />
-        </div>
-        <span>Web Deweloper</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;700&family=Merriweather+Sans:ital,wght@0,300;1,300;1,600&display=swap"
+    rel="stylesheet" />
+  <title>Varga Jozsef portfolio - Frontend Programmer</title>
+  <meta name="description"
+    content="Hi, I'm Jozsef Varga, a Frontend Engineer living in Hungary. I have experience in javaScript, Css, Html, Wordpress, Joomla, GitHub, Regex, Gimp, Adobe Photoshop, Inkscape."
+    data-react-helmet="true" />
+</head>
+
+<body>
+  <label for="hambmenu" class="hamblabel"></label>
+  <input type="checkbox" name="hambmenu" id="hambmenu" hidden />
+  <div class="main-menu">
+    <div class="toplogo">
+      <div class="logo">
+        <img src="./media/face.webp" alt="developerfoto" />
       </div>
-      <div id="menu-nav">
-        <ul>
-          <li class="menuelement"><a href="#AboutMe" id="about">About</a></li>
-          <li class="menuelement">
-            <a href="#MySkills" id="myskills">My Skills</a>
-          </li>
-          <li class="menuelement"><a href="#Work" id="work">Work</a></li>
-          <li class="menuelement">
-            <a href="#Contact" id="contact">Contact</a>
-          </li>
-          <li class="menuelement social">
-            <div>
-              <a href="#about"
-                ><img src="./media/facebook.png" alt="facebook_icon"
-              /></a>
-            </div>
-            <div>
-              <a href="#about"
-                ><img src="./media/twitter.png" alt="Twitter_icon"
-              /></a>
-            </div>
-            <div>
-              <a href="#about"
-                ><img src="./media/linkedin.png" alt="Linkedin_icon"
-              /></a>
-            </div>
-            <div>
-              <a href="#about"
-                ><img src="./media/rss-box.png" alt="rss_feed_icon"
-              /></a>
-            </div>
-          </li>
-        </ul>
+      <span>Web Deweloper</span>
+    </div>
+    <div id="menu-nav">
+      <ul>
+        <li class="menuelement"><a href="#AboutMe" id="about">About</a></li>
+        <li class="menuelement">
+          <a href="#MySkills" id="myskills">My Skills</a>
+        </li>
+        <li class="menuelement"><a href="#Work" id="work">Work</a></li>
+        <li class="menuelement">
+          <a href="#Contact" id="contact">Contact</a>
+        </li>
+        <li class="menuelement social">
+          <div>
+            <a href="https://www.facebook.com/jozsef.varga.9028/" target="_blank"><img src="./media/facebook.png"
+                alt="facebook_icon" title="Facebook Profile" /></a>
+          </div>
+          <div>
+            <a href="https://twitter.com/Joyzi17" target="_about" title="Twitter profile"><img src="./media/twitter.png"
+                alt="Twitter_icon" /></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/jozsef-varga-578754200/" target="_about" title="Linkedin profile"><img
+                src="./media/linkedin.png" alt="Linkedin_icon" /></a>
+          </div>
+          <div>
+            <a href="#about"><img src="./media/rss-box.png" alt="rss_feed_icon" /></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="mainwrap">
+    <div class="wrapper-langue">
+      <img src="./media/unionjack.png" id="english" alt="unionjack" />
+      <img src="./media/hungaryFlag.png" id="magyar" alt="magyar zászló" />
+      <img src="./media/germanFlag.png" id="german" alt="Deutsche Flagge" />
+    </div>
+    <div class="card" id="AboutMe">
+      <div class="topsite" id="AboutMeSite">
+        <img src="./media/aboutme.webp" alt="aboutme" />
+      </div>
+      <div class="textcontener">
+        <h2 id="debut">About me</h2>
+
+        <p id="textAbout">
+          Hy, my name is Josef. I am on the way to be a Front End developer. I
+          located in EU. I develop websites with a focus on user interfaces
+          and data visualisations. I do take on full website projects, Joomla
+          and Wordpress projects, webstores. I am a problem solver employee
+          with high attention to details. I am interested in the whole
+          Frontend area. I am paraglider and I have tree children.
+        </p>
+        <div class="datum">
+          <p>2019.08.01.</p>
+        </div>
       </div>
     </div>
 
-    <main class="mainwrap">
-      <div class="wrapper-langue">
-        <img src="./media/unionjack.png" id="english" alt="unionjack" />
-        <img src="./media/hungaryFlag.png" id="magyar" alt="magyar zászló" />
-        <img src="./media/germanFlag.png" id="german" alt="Deutsche Flagge" />
+    <div class="card" id="MySkills">
+      <div class="topsite">
+        <img src="./media/skills.webp" alt="skills_photo" />
       </div>
-      <div class="card" id="AboutMe">
-        <div class="topsite" id="AboutMeSite">
-          <img src="./media/aboutme.webp" alt="aboutme" />
-        </div>
-        <div class="textcontener">
-          <h2 id="debut">About me</h2>
+      <div class="textcontener">
+        <h2 id="skillsTitle">My Skills</h2>
+        <div id="skillcontainer">
+          <div class="iconcontainer" id="vhtml">
+            <p>Html</p>
+            <img src="./media/html.png " alt="html_icon" />
+          </div>
+          <div class="iconcontainer" id="vcss">
+            <p>Css</p>
+            <img src="./media/css3.png" alt="css_icon" />
+          </div>
+          <div class="iconcontainer" id="vjavaScript">
+            <p>JavaScript</p>
+            <img src="./media/javascript.png" alt="javascript_icon" />
+          </div>
+          <div class="iconcontainer" id="vgithub">
+            <p>
+              Github <br />
+              https://github.com/vargajozsi
+            </p>
 
-          <p id="textAbout">
-            Hy, my name is Josef. I am on the way to be a Front End developer. I
-            located in EU. I develop websites with a focus on user interfaces
-            and data visualisations. I do take on full website projects, Joomla
-            and Wordpress projects, webstores. I am a problem solver employee
-            with high attention to details. I am interested in the whole
-            Frontend area. I am paraglider and I have tree children.
-          </p>
-          <div class="datum">
-            <p>2019.08.01.</p>
+            <img src="./media/github.png" alt="github_icon" />
+          </div>
+          <div class="iconcontainer" id="vbash">
+            <p>Bash</p>
+            <img src="./media/bash.png" alt="bash_icon" />
+          </div>
+          <div class="iconcontainer" id="vregex">
+            <p>Regex</p>
+            <img src="./media/regex.png" alt="regex_icon" />
+          </div>
+          <div class="iconcontainer" id="vjoomla">
+            <p>Joomla</p>
+            <img src="./media/joomla.png" alt="joomla_icon" />
+          </div>
+          <div class="iconcontainer" id="vwordpress">
+            <p>Wordpress</p>
+            <img src="./media/wordpress.png" alt="wordpress_icon" />
+          </div>
+          <div class="iconcontainer" id="vAdobePhotoshop">
+            <p>Adobe Photoshop</p>
+            <img src="./media/Photoshop.png" alt="adobephotoshop_icon" />
+          </div>
+          <div class="iconcontainer" id="vinkscape">
+            <p>Inkscape</p>
+            <img src="./media/Inkscape.svg" alt="inkscape_icon" />
+          </div>
+          <div class="iconcontainer" id="vgimp">
+            <p>Gimp</p>
+            <img src="./media/gimp.svg" alt="gimp_icon" />
           </div>
         </div>
-      </div>
-
-      <div class="card" id="MySkills">
-        <div class="topsite">
-          <img src="./media/skills.webp" alt="skills_photo" />
-        </div>
-        <div class="textcontener">
-          <h2 id="skillsTitle">My Skills</h2>
-          <div id="skillcontainer">
-            <div class="iconcontainer" id="vhtml">
-              <p>Html</p>
-              <img src="./media/html.png " alt="html_icon" />
-            </div>
-            <div class="iconcontainer" id="vcss">
-              <p>Css</p>
-              <img src="./media/css3.png" alt="css_icon" />
-            </div>
-            <div class="iconcontainer" id="vjavaScript">
-              <p>JavaScript</p>
-              <img src="./media/javascript.png" alt="javascript_icon" />
-            </div>
-            <div class="iconcontainer" id="vgithub">
-              <p>
-                Github <br />
-                https://github.com/vargajozsi
-              </p>
-
-              <img src="./media/github.png" alt="github_icon" />
-            </div>
-            <div class="iconcontainer" id="vbash">
-              <p>Bash</p>
-              <img src="./media/bash.png" alt="bash_icon" />
-            </div>
-            <div class="iconcontainer" id="vregex">
-              <p>Regex</p>
-              <img src="./media/regex.png" alt="regex_icon" />
-            </div>
-            <div class="iconcontainer" id="vjoomla">
-              <p>Joomla</p>
-              <img src="./media/joomla.png" alt="joomla_icon" />
-            </div>
-            <div class="iconcontainer" id="vwordpress">
-              <p>Wordpress</p>
-              <img src="./media/wordpress.png" alt="wordpress_icon" />
-            </div>
-            <div class="iconcontainer" id="vAdobePhotoshop">
-              <p>Adobe Photoshop</p>
-              <img src="./media/Photoshop.png" alt="adobephotoshop_icon" />
-            </div>
-            <div class="iconcontainer" id="vinkscape">
-              <p>Inkscape</p>
-              <img src="./media/Inkscape.svg" alt="inkscape_icon" />
-            </div>
-            <div class="iconcontainer" id="vgimp">
-              <p>Gimp</p>
-              <img src="./media/gimp.svg" alt="gimp_icon" />
-            </div>
-          </div>
-          <div></div>
-          <div class="datum">
-            <p>2020.09.04.</p>
-          </div>
+        <div></div>
+        <div class="datum">
+          <p>2020.09.04.</p>
         </div>
       </div>
+    </div>
 
-      <div class="card" id="Work">
-        <div class="topsite">
-          <img src="./media/work.webp" alt="work_photo" />
+    <div class="card" id="Work">
+      <div class="topsite">
+        <img src="./media/work.webp" alt="work_photo" />
+      </div>
+      <div class="textcontener">
+        <h2 id="workTitle">Work</h2>
+
+        <div class="workscontainer">
+          <div>
+            <a href="https://sikloernyosklub.hu" target="_blank"><img src="./media/sikloernyosklub.webp"
+                alt="sikloernyosklub_thumbnail" />
+            </a>
+          </div>
+          <div>
+            <a href="https://mvse.hu" target="_blank"><img src="./media/mvse.webp"
+                alt="sikloernyosklub_thumbnail" /></a>
+          </div>
+          <div>
+            <a href="https://ekszerpont.hu" target="_blank"><img src="./media/ekszerpont.webp"
+                alt="ekszerpont_thumbnail" /></a>
+          </div>
         </div>
-        <div class="textcontener">
-          <h2 id="workTitle">Work</h2>
-
-          <div class="workscontainer">
-            <div>
-              <a href="https://sikloernyosklub.hu" target="_blank"
-                ><img
-                  src="./media/sikloernyosklub.webp"
-                  alt="sikloernyosklub_thumbnail"
-                />
-              </a>
-            </div>
-            <div>
-              <a href="https://mvse.hu" target="_blank"
-                ><img src="./media/mvse.webp" alt="sikloernyosklub_thumbnail"
-              /></a>
-            </div>
-            <div>
-              <a href="https://ekszerpont.hu" target="_blank"
-                ><img src="./media/ekszerpont.webp" alt="ekszerpont_thumbnail"
-              /></a>
-            </div>
-          </div>
-          <div class="datum">
-            <p>2020.09.04.</p>
-          </div>
+        <div class="datum">
+          <p>2020.09.04.</p>
         </div>
       </div>
+    </div>
 
-      <div class="card" id="Contact">
-        <div class="topsite">
-          <img src="./media/contact.webp" alt="contact_photo" />
-        </div>
-        <div class="textcontener">
-          <h2 id="contactTitle">Contact</h2>
+    <div class="card" id="Contact">
+      <div class="topsite">
+        <img src="./media/contact.webp" alt="contact_photo" />
+      </div>
+      <div class="textcontener">
+        <h2 id="contactTitle">Contact</h2>
 
-          <p id="contactText">
-            If you have any request or question do not hesitate to use the form.
-          </p>
-          <ul class="contactformul">
-            <li>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="Name"
-                required
-              /><input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              /><br />
-            </li>
-            <li>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                type="textarea"
-                id="message"
-                name="message"
-                placeholder="Message"
-                required
-              ></textarea>
-            </li>
-            <li id="buttonform">
-              <button disabled="disabled" id="contactButton">Submit</button>
-            </li>
-          </ul>
+        <p id="contactText">
+          If you have any request or question do not hesitate to use the form.
+        </p>
+        <ul class="contactformul">
+          <li>
+            <input type="text" id="fname" name="fname" placeholder="Name" required /><input type="text" id="email"
+              name="email" placeholder="E-mail" required /><br />
+          </li>
+          <li>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          </li>
+          <li>
+            <textarea type="textarea" id="message" name="message" placeholder="Message" required></textarea>
+          </li>
+          <li id="buttonform">
+            <button disabled="disabled" id="contactButton">Submit</button>
+          </li>
+        </ul>
 
-          <div class="datum">
-            <p>2020.09.04.</p>
-          </div>
+        <div class="datum">
+          <p>2020.09.04.</p>
         </div>
       </div>
-    </main>
-    <script type="module" src="./scripts/script.js"></script>
-  </body>
+    </div>
+  </main>
+  <script type="module" src="./scripts/script.js"></script>
+</body>
+
 </html>

@@ -142,6 +142,10 @@ body {
   width: 100%;
   color: var(--secfont);
 }
+.menuelement a:hover {
+  transition: all 0.5s;
+  font-size: 120%;
+}
 
 .social {
   display: flex;

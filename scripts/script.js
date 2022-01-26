@@ -1,4 +1,4 @@
-import { translateToHungarian, translateToGerman } from "./translatModule.js";
+import { translateToHungarian, translateToGerman, translateToEnglish } from "./translatModule.js";
 
 let hungarianLangue = document.getElementById("magyar");
 let englishLangue = document.getElementById("english");
@@ -9,7 +9,7 @@ hungarianLangue.addEventListener("click", () => {
 });
 englishLangue.addEventListener("click", () => {
   //page reload:
-  window.location.reload(true);
+  translateToEnglish();
 });
 germanLangue.addEventListener("click", () => {
   translateToGerman();
