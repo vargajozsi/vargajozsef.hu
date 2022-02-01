@@ -26,6 +26,7 @@ html {
   --secfont: #ccd6f6;
   --border: #64ffda;
   --csrdheader: #7ddf8d;
+  overflow-y: hidden;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
   top: 2rem;
   width: 2rem;
   height: 0.25rem;
-  z-index: 5;
+  z-index: 100;
   cursor: pointer;
 }
 .hamblabel::before,
@@ -164,6 +165,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 /*---------------begin of langue selection section*/
 .wrapper-langue {
@@ -300,33 +302,6 @@ body {
     background: #7ddf8d;
   }
 }
-/* @keyframes skillanimated {
-  0% {
-    opacity: 0.01;
-    top: -100%;
-    background: white;
-  }
-  25% {
-    opacity: 0.5;
-    top: -25%;
-    background: gray;
-  }
-  50% {
-    opacity: 1;
-    top: 0;
-    background: green;
-  }
-  75% {
-    opacity: 0.5;
-    top: 50%;
-    background: green;
-  }
-  100% {
-    opacity: 0.01;
-    top: 100%;
-    background: gray;
-  }
-} */
 
 .workscontainer {
   display: flex;

@@ -37,12 +37,12 @@ function translateToGerman() {
   //main elements translate:
   document.getElementById("debut").innerText = "Über mich";
   document.getElementById("textAbout").innerText =
-    "Servus! Mein Name ist Josef. Ich bin auf dem weg, Front-end Entwickler zu werden. Ich bin in der EU ansässig. Ich entwickle Webseiten mit Focus auf User Interfaces und Datenvisualisierungen. Ich übernehme ganze Websiteprojekte Joomla oder WordPress-Projekte, beziehungsweise Webstores. Ich bin ein Problemslöser Typ mit grosse Sorgfalt auf Details.  Ich interessiere mich für den gesamten Frontend-Bereich. Ich bin Gleitschirmflieger und Familienvater von drei Kinder.";
+    "Servus! Mein Name ist Josef. Ich bin auf dem weg Front-end Entwickler zu werden. Ich bin in der EU ansässig. Ich entwickle Webseiten mit Focus auf User Interfaces und Datenvisualisierungen. Ich übernehme ganze Websiteprojekte Joomla oder WordPress-Projekte, beziehungsweise Webstores. Ich bin ein Problemslöser Typ mit grosse Sorgfalt auf Details.  Ich interessiere mich für den gesamten Frontend-Bereich. Ich bin Gleitschirmflieger und Familienvater von drei Kinder.";
   document.getElementById("skillsTitle").innerText = "Kompetenzen";
   document.getElementById("workTitle").innerText = "Leistungen";
   document.getElementById("contactTitle").innerText = "Kontakt";
   document.getElementById("contactText").innerText =
-    "Zögern Sie bitte nicht, uns zu kontaktieren, falls Sie irgendwelche Informationen benötigen.";
+    "Zögern Sie bitte nicht uns zu kontaktieren, falls Sie irgendwelche Informationen benötigen.";
   //html langue change:
   document.documentElement.setAttribute("lang", "hu");
   //form translate:
@@ -62,7 +62,7 @@ function translateToEnglish() {
   tcontact.innerText = "Contact";
   //main elements translate:
   document.getElementById("debut").innerText = "About me";
-  document.getElementById("textAbout").innerText = "Hy, my name is Josef. I am on the way to be a Front End developer. I located in EU.I develop websites with a focus on user interfaces and data visualisations.I do take on full website projects, Joomla and Wordpress projects, webstores.I am a problem solver employee with high attention to details.I am interested in the whole Frontend area.I am paraglider and I have tree children.";
+  document.getElementById("textAbout").innerText = "Hy, my name is Josef. I am on the way to be a Front End developer. I located in EU. I develop websites with a focus on user interfaces and data visualisations. I do take on full website projects, Joomla and Wordpress projects, webstores. I am a problemsolver employee with high attention to details. I am interested in the whole Frontend area. I am paraglider and I have tree children.";
   document.getElementById("skillsTitle").innerText = "Skills";
   document.getElementById("workTitle").innerText = "Works";
   document.getElementById("contactTitle").innerText = "Contact";
