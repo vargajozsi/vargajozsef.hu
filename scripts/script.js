@@ -54,3 +54,39 @@ function startTimer() {
   setInterval(displayNextItem, 5000);
 }
 startTimer();
+
+
+// menüváltás Onclick hívások
+const menuContentId = ['AboutMe', 'MySkills', 'Work', 'Contact']
+
+document.getElementById('about').onclick = function (event) {
+  menuContentId.map(menuItem => {
+    document.getElementById(menuItem).style.display = 'none'
+  });
+  document.getElementById('AboutMe').style.display = 'flex';
+}
+
+
+document.getElementById('myskills').onclick = function (event) {
+  menuContentId.map(menuItem => {
+    document.getElementById(menuItem).style.display = 'none'
+  });
+  document.getElementById('MySkills').style.display = 'flex';
+}
+
+document.getElementById('work').onclick = function (event) {
+  menuContentId.map(menuItem => {
+    document.getElementById(menuItem).style.display = 'none'
+  });
+  document.getElementById('Work').style.display = 'flex';
+}
+
+document.getElementById('contact').onclick = function (event) {
+  menuContentId.map(menuItem => {
+    document.getElementById(menuItem).style.display = 'none'
+  });
+  document.getElementById('Contact').style.display = 'flex';
+}
+
+
+// menüváltás Onclick hívások vége

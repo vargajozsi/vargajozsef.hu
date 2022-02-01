@@ -1,4 +1,4 @@
-/* font-family: 'Barlow', sans-serif; */
+/* font-fmily: 'Barlow', sans-serif; */
 /* font-family: 'Merriweather Sans', sans-serif;  */
 *,
 *::before,
@@ -180,7 +180,21 @@ body {
 }
 
 /*---------------end of langue selection section*/
+#AboutMe {
+  display: flex;
+}
 
+#MySkills {
+  display: none;
+}
+
+#Work {
+  display: none;
+}
+
+#Contact {
+  display: none;
+}
 .card {
   margin: 2rem;
   height: auto;
