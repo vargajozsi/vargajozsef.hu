@@ -90,3 +90,10 @@ document.getElementById('contact').onclick = function (event) {
 
 
 // menüváltás Onclick hívások vége
+
+// Hamburgermenu hide if tap on screen of outside of menufeld 
+document.getElementById('main').onclick = function () {
+  document.getElementById('hambmenu').checked = false;
+}
+
+// Hamburgermenu hide if tap on screen of outside of menufeld end

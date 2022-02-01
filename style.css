@@ -225,15 +225,15 @@ body {
 .textcontener {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .card h2 {
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
   font-size: clamp(12px, calc(1.5rem + 0.7vw), 30px);
 }
 .card p {
-  margin: 0 0 3rem 0;
+  margin: 1rem 0 1rem 0;
   font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
 }
 
@@ -249,7 +249,8 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  min-height: 18rem;
+  height: 12.5rem;
+  max-width: 100%;
 }
 
 .iconcontainer {
@@ -389,7 +390,7 @@ textarea {
   padding: 0 7px;
 }
 #message {
-  height: 10rem;
+  max-height: 10rem;
 }
 
 button {
@@ -410,6 +411,7 @@ button {
 @media screen and (max-width: 1024px) {
   .hamblabel {
     display: block;
+    z-index: 101;
   }
 
   .main-menu {
@@ -422,6 +424,7 @@ button {
     transition: transform 0.5s ease-in-out;
     transform: scale(0%);
     transform-origin: top right;
+    z-index: 100;
   }
   input[type="checkbox"]:checked + .main-menu {
     transition: transform 0.5s ease-in-out;
