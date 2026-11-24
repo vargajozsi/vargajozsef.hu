@@ -22,8 +22,15 @@
   </head>
 
   <body>
-    <label for="hambmenu" class="hamblabel"></label>
-    <input type="checkbox" name="hambmenu" id="hambmenu" hidden />
+    <input
+      type="checkbox"
+      name="hambmenu"
+      id="hambmenu"
+      class="hambcheck"
+      aria-label="Menü"
+      aria-controls="menu-nav"
+    />
+    <label for="hambmenu" class="hamblabel" aria-hidden="true"></label>
     <div class="main-menu">
       <div class="toplogo">
         <div class="logo">
@@ -43,23 +50,11 @@
           </li>
           <li class="menuelement social">
             <div>
-              <a href="#about"
-                ><img src="./media/facebook.png" alt="facebook_icon"
-              /></a>
-            </div>
-            <div>
-              <a href="#about"
-                ><img src="./media/twitter.png" alt="Twitter_icon"
-              /></a>
-            </div>
-            <div>
-              <a href="#about"
-                ><img src="./media/linkedin.png" alt="Linkedin_icon"
-              /></a>
-            </div>
-            <div>
-              <a href="#about"
-                ><img src="./media/rss-box.png" alt="rss_feed_icon"
+              <a
+                href="https://m.facebook.com/jozsef.varga.9028/"
+                target="_blank"
+                rel="noopener"
+                ><img src="./media/facebook.png" alt="Facebook"
               /></a>
             </div>
           </li>
@@ -113,14 +108,6 @@
               <p>JavaScript</p>
               <img src="./media/javascript.png" alt="javascript_icon" />
             </div>
-            <div class="iconcontainer" id="vgithub">
-              <p>
-                Github <br />
-                https://github.com/vargajozsi
-              </p>
-
-              <img src="./media/github.png" alt="github_icon" />
-            </div>
             <div class="iconcontainer" id="vbash">
               <p>Bash</p>
               <img src="./media/bash.png" alt="bash_icon" />
@@ -166,7 +153,7 @@
 
           <div class="workscontainer">
             <div>
-              <a href="https://sikloernyosklub.hu" target="_blank"
+              <a href="https://sikloernyosklub.hu" target="_blank" rel="noopener"
                 ><img
                   src="./media/sikloernyosklub.webp"
                   alt="sikloernyosklub_thumbnail"
@@ -174,12 +161,12 @@
               </a>
             </div>
             <div>
-              <a href="https://mvse.hu" target="_blank"
-                ><img src="./media/mvse.webp" alt="sikloernyosklub_thumbnail"
+              <a href="https://mvse.hu" target="_blank" rel="noopener"
+                ><img src="./media/mvse.webp" alt="mvse_thumbnail"
               /></a>
             </div>
             <div>
-              <a href="https://ekszerpont.hu" target="_blank"
+              <a href="https://ekszerpont.hu" target="_blank" rel="noopener"
                 ><img src="./media/ekszerpont.webp" alt="ekszerpont_thumbnail"
               /></a>
             </div>
@@ -198,46 +185,15 @@
           <h2 id="contactTitle">Contact</h2>
 
           <p id="contactText">
-            If you have any request or question do not hesitate to use the form.
+            If you have any request or question, feel free to write me an
+            e-mail.
           </p>
-          <ul class="contactformul">
-            <li>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="Name"
-                required
-              /><input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              /><br />
-            </li>
-            <li>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                type="textarea"
-                id="message"
-                name="message"
-                placeholder="Message"
-                required
-              ></textarea>
-            </li>
-            <li id="buttonform">
-              <button disabled="disabled" id="contactButton">Submit</button>
-            </li>
-          </ul>
+          <!-- the address is assembled by script.js only after a click,
+               so it never appears in the page source for spam bots -->
+          <div class="contactmail">
+            <button type="button" id="showEmail">Show e-mail address</button>
+            <a id="emailLink" class="emaillink" hidden></a>
+          </div>
 
           <div class="datum">
             <p>2020.09.04.</p>

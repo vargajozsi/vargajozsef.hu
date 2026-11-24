@@ -46,6 +46,21 @@ body {
   z-index: 5;
   cursor: pointer;
 }
+/* the checkbox stays focusable for keyboard users, but is visually hidden */
+.hambcheck {
+  position: fixed;
+  right: 1.5rem;
+  top: 1.25rem;
+  width: 3rem;
+  height: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+.hambcheck:focus-visible + .hamblabel {
+  outline: 2px solid var(--border);
+  outline-offset: 0.75rem;
+}
 .hamblabel::before,
 .hamblabel::after {
   display: block;
@@ -336,48 +351,66 @@ body {
   -webkit-box-shadow: 5px 5px 10px 5px #000000;
   box-shadow: 5px 5px 10px 5px #000000;
 }
-.contactformul {
+.contactmail {
   text-align: center;
+  margin-bottom: 2rem;
+}
+.emaillink {
+  font-size: clamp(12px, calc(1rem + 0.5vw), 20px);
+  font-weight: 600;
+  color: var(--menubackground);
+  word-break: break-all;
+}
+.emaillink:hover,
+.emaillink:focus-visible {
+  color: var(--bigfont);
 }
 
-input,
-textarea {
-  line-height: 1.7rem;
-  overflow: auto;
-  resize: none;
-  outline: none;
-  border: 2px solid var(--csrdheader);
-  border-radius: 4px;
+/* e-mail reveal animation */
+.fadeOut {
+  animation: emailButtonOut 0.5s ease-in forwards;
 }
-
-.contactformul li {
-  list-style: none;
-  margin: 6px 0;
+.reveal {
+  display: inline-block;
+  animation: emailReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-
-#fname,
-#email {
-  width: 40%;
-  margin: 0;
-  padding: 0 7px;
+@keyframes emailButtonOut {
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
 }
-#subject {
-  width: 80%;
-  padding: 0 7px;
+@keyframes emailReveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+    letter-spacing: 0.35em;
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    letter-spacing: normal;
+    filter: none;
+  }
 }
-#message {
-  min-width: 80%;
-  max-width: 80%;
-  padding: 0 7px;
-}
-#message {
-  height: 10rem;
+@media (prefers-reduced-motion: reduce) {
+  .fadeOut,
+  .reveal {
+    animation: none;
+  }
 }
 
 button {
   background-color: var(--csrdheader);
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--menubackground);
   border-radius: 4px;
+  cursor: pointer;
+}
+button:hover,
+button:focus-visible {
+  background-color: #a8ffb7;
 }
 
 .datum p {
@@ -393,6 +426,9 @@ button {
   .hamblabel {
     display: block;
   }
+  .hambcheck {
+    display: block;
+  }
 
   .main-menu {
     height: fit-content;
@@ -401,14 +437,16 @@ button {
     align-items: center;
     margin: 0;
     padding: 0;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, visibility 0s linear 0.5s;
     transform: scale(0%);
     transform-origin: top right;
+    visibility: hidden;
   }
-  input[type="checkbox"]:checked + .main-menu {
-    transition: transform 0.5s ease-in-out;
+  .hambcheck:checked ~ .main-menu {
+    transition: transform 0.5s ease-in-out, visibility 0s;
     transform: scale(100%);
     transform-origin: top right;
+    visibility: visible;
   }
   body {
     padding: 0;

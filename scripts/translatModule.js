@@ -18,14 +18,11 @@ function translateToHungarian() {
   document.getElementById("workTitle").innerText = "Munkáim";
   document.getElementById("contactTitle").innerText = "Kapcsolat";
   document.getElementById("contactText").innerText =
-    "Ha bármely kérdése vagy kérése lenne, ne habozzon az űrlapot használni.";
+    "Ha bármilyen kérdése vagy kérése van, írjon nekem bátran e-mailt.";
   //html langue change:
   document.documentElement.setAttribute("lang", "hu");
-  //form translate:
-  document.getElementById("fname").setAttribute("placeholder", "Név");
-  document.getElementById("subject").setAttribute("placeholder", "Tárgy");
-  document.getElementById("message").setAttribute("placeholder", "Üzenet");
-  document.getElementById("contactButton").innerText = "Elküld";
+  //contact translate:
+  document.getElementById("showEmail").innerText = "E-mail-cím megjelenítése";
 }
 
 function translateToGerman() {
@@ -42,13 +39,10 @@ function translateToGerman() {
   document.getElementById("workTitle").innerText = "Leistungen";
   document.getElementById("contactTitle").innerText = "Kontakt";
   document.getElementById("contactText").innerText =
-    "Zögern Sie bitte nicht, uns zu kontaktieren, falls Sie irgendwelche Informationen benötigen.";
+    "Wenn Sie Fragen oder Wünsche haben, schreiben Sie mir gerne eine E-Mail.";
   //html langue change:
-  document.documentElement.setAttribute("lang", "hu");
-  //form translate:
-  document.getElementById("fname").setAttribute("placeholder", "Name");
-  document.getElementById("subject").setAttribute("placeholder", "Betreff");
-  document.getElementById("message").setAttribute("placeholder", "Nachricht");
-  document.getElementById("contactButton").innerText = "senden";
+  document.documentElement.setAttribute("lang", "de");
+  //contact translate:
+  document.getElementById("showEmail").innerText = "E-Mail-Adresse anzeigen";
 }
 export { translateToHungarian, translateToGerman };
